@@ -41,7 +41,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # O Vite joga os arquivos compilados aqui
+          path: './out' # O Vite joga os arquivos compilados aqui
 
       - name: Deploy to GitHub Pages
         id: deployment
