@@ -69,7 +69,7 @@ export default defineConfig({
       dts: true,
     }),
   ],
-  base,
+  base: '/site-jessica-fotografia/',
   build: {
     sourcemap: true,
     outDir: 'out',
