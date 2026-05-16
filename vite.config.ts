@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from "node:path";
 import AutoImport from "unplugin-auto-import/vite";
 
 const base = "/site-jessica-fotografia/";
@@ -73,7 +72,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
+      "@": "/src", // <-- Mudança de Infra: Apontamento direto e nativo sem dependência de SO
     },
   },
   server: {
